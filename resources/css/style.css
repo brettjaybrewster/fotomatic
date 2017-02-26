@@ -52,6 +52,14 @@ html {
     height: 48.33333333vmax;
   }
 }
+@media only screen and (max-width: 450px) {
+  .main-content {
+    top: 48px;
+    height: 60vmin;
+    background-position: right;
+    background-size: cover;
+  }
+}
 
 /* Header */
 header {
@@ -113,6 +121,11 @@ header .mobile {
   }
 }
 @media only screen and (max-width: 450px) {
+  header {
+    height: 48px;
+    padding: 0;
+    margin: 0;
+  }
   #button-med {
     display: none;
   }
@@ -122,9 +135,11 @@ header .mobile {
   header .mobile {
     display: block;
     width: 100%;
+    padding: 10px 0;
   }
   header .content {
-    padding: .5rem 0;
+    padding: 0;
+    margin: 0;
   }
   header .mobile ul {
     display: flex;
@@ -214,13 +229,12 @@ header .mobile {
 }
 @media only screen and (max-width: 450px) {
   #sign-up-section {
-    height: 20rem;
+    /*height: 20rem;*/
+    width: 100%;
   }
-
   #sign-up-cta h1 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
   }
-
   #sign-up-cta h2 {
     font-size: 2rem;
   }
@@ -269,6 +283,7 @@ header .mobile {
   line-height: 1.2;
   font-weight: 300;
   color: #4a4a4a;
+  padding-top: .75rem;
 }
 @media only screen and (max-width: 890px) {
   .feature h2 {
@@ -305,6 +320,31 @@ header .mobile {
   }
   #strange-text-1 {
     padding-bottom: 1.7rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #features-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .feature {
+    width: 100%;
+    min-width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+  .feature .center {
+    width: 92%;
+    padding: 16px 16px 30px 16px;
+  }
+  .feature img {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 180px;
+  }
+  .feature h3 {
+    text-align: center;
   }
 }
 
@@ -362,6 +402,11 @@ header .mobile {
     padding: 0;
   }
 }
+@media only screen and (max-width: 450px) {
+  .extra {
+    display: none;
+  }
+}
 
 /* Quotes Section */
 
@@ -389,7 +434,6 @@ header .mobile {
   #quotes-section .content {
     padding: 1.875rem .625rem;
   }
-
   #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
@@ -399,6 +443,13 @@ header .mobile {
     display: block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #quotes-section .quote {
+    font-size: 24px;
+    line-height: 1.4;
+  }
   }
 }
 
@@ -416,8 +467,17 @@ footer .content {
 footer .copyright {
   flex-grow: 1;
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px) {
   footer .content {
     font-size: .625rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  footer {
+    background-color: #9b9b9b;
+  }
+  footer .content {
+    font-size: 10px;
+    padding: .75rem;
   }
 }
