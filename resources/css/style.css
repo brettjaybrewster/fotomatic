@@ -47,6 +47,7 @@ html {
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
+    background-size: contain;
   }
 }
 
@@ -93,6 +94,7 @@ header .mobile {
   display: none;
 }
 @media only screen and (max-width: 760px) {
+  /*TABLET HEADER*/
   #button-med {
     display: inline-block;
     padding: .1875rem .5rem;
@@ -101,7 +103,12 @@ header .mobile {
     color: white;
     margin: 0;
   }
-
+  header li {
+    padding: 0 0 0 1rem;
+  }
+  header .content {
+    padding-right: .75rem
+  }
 }
 @media only screen and (max-width: 450px) {
   #button-med {
@@ -181,7 +188,6 @@ header .mobile {
     justify-content: center;
     height: 28rem;
   }
-
   #sign-up-cta {
     position: static;
     width: auto;
@@ -189,19 +195,15 @@ header .mobile {
     background-color: transparent;
     border: none;
   }
-
   #sign-up-cta .content {
     margin-top: 0;
   }
-
   #sign-up-cta .email {
     display: none;
   }
-
   #sign-up-cta h1 {
     font-size: 3.125rem;
   }
-
   #sign-up-cta h2 {
     font-size: 2.25rem;
   }
